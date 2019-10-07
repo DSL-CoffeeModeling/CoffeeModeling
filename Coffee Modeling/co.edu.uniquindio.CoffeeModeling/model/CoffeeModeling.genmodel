@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/co.edu.uniquindio.CoffeeModeling/src" modelPluginID="co.edu.uniquindio.CoffeeModeling"
+    modelName="CoffeeModeling" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>CoffeeModeling.ecore</foreignModel>
+  <genPackages prefix="CoffeeModeling" disposableProviderFactory="true" ecorePackage="CoffeeModeling.ecore#/">
+    <genClasses ecoreClass="CoffeeModeling.ecore#//Origin">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoffeeModeling.ecore#//Origin/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoffeeModeling.ecore#//Origin/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoffeeModeling.ecore#//Origin/average_altitude"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoffeeModeling.ecore#//Origin/average_latitude"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoffeeModeling.ecore#//Origin/average_longitude"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoffeeModeling.ecore#//Origin/anual_production"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoffeeModeling.ecore#//Origin/average_temperature"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoffeeModeling.ecore#//Origin/assortment"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoffeeModeling.ecore#//Origin/details"/>
+    </genClasses>
+    <genClasses ecoreClass="CoffeeModeling.ecore#//ProductUnity">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoffeeModeling.ecore#//ProductUnity/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoffeeModeling.ecore#//ProductUnity/state"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoffeeModeling.ecore#//ProductUnity/descripcion"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeModeling.ecore#//ProductUnity/defect"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeModeling.ecore#//ProductUnity/register"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeModeling.ecore#//ProductUnity/origin"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeModeling.ecore#//ProductUnity/feature"/>
+    </genClasses>
+    <genClasses ecoreClass="CoffeeModeling.ecore#//Defect">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoffeeModeling.ecore#//Defect/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoffeeModeling.ecore#//Defect/id"/>
+    </genClasses>
+    <genClasses ecoreClass="CoffeeModeling.ecore#//People">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoffeeModeling.ecore#//People/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoffeeModeling.ecore#//People/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoffeeModeling.ecore#//People/birthdate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoffeeModeling.ecore#//People/experience_years"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoffeeModeling.ecore#//People/entailment"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoffeeModeling.ecore#//People/special_population"/>
+    </genClasses>
+    <genClasses ecoreClass="CoffeeModeling.ecore#//Process">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoffeeModeling.ecore#//Process/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoffeeModeling.ecore#//Process/date_init"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoffeeModeling.ecore#//Process/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoffeeModeling.ecore#//Process/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoffeeModeling.ecore#//Process/date_end"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CoffeeModeling.ecore#//Process/people"/>
+    </genClasses>
+    <genClasses ecoreClass="CoffeeModeling.ecore#//Feature">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoffeeModeling.ecore#//Feature/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoffeeModeling.ecore#//Feature/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoffeeModeling.ecore#//Feature/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CoffeeModeling.ecore#//Feature/description"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

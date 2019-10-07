@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:description_2="http://www.eclipse.org/sirius/table/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="coffeemodeling" version="12.0.0.2017041100">
+  <ownedViewpoints name="Diagramas">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="ProductUnity" domainClass="CoffeeModeling::ProductUnity" enablePopupBars="true">
+      <metamodel href="http://www.example.org/CoffeeModeling#/"/>
+      <defaultLayer name="Default">
+        <containerMappings name="OriginContainer" semanticCandidatesExpression="var:self" domainClass="CoffeeModeling::ProductUnity" childrenPresentation="List">
+          <subNodeMappings name="Origin" semanticCandidatesExpression="feature:origin" domainClass="CoffeeModeling::Origin">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="aql:self.name" labelAlignment="LEFT" sizeComputationExpression="7" resizeKind="NSEW" workspacePath="co.edu.uniquindio.CoffeeModeling.edit\icons\full\obj16\Origin.gif">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </subNodeMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="14" labelExpression="aql:'Product Unity '+self.id+': Origin'" widthComputationExpression="20" heightComputationExpression="10">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelFormat>bold</labelFormat>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+          </style>
+        </containerMappings>
+        <containerMappings name="ProcessContainer" semanticCandidatesExpression="var:self" domainClass="CoffeeModeling::ProductUnity" childrenPresentation="List">
+          <subNodeMappings name="Process" semanticCandidatesExpression="feature:register" doubleClickDescription="//@ownedViewpoints[name='Diagramas']/@ownedRepresentations[name='ProductUnity']/@defaultLayer/@toolSections.0/@ownedTools[name='Ir%20a%20Personas']" domainClass="CoffeeModeling::Process">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="aql:self.name" labelAlignment="LEFT" sizeComputationExpression="7" resizeKind="NSEW" workspacePath="co.edu.uniquindio.CoffeeModeling.edit\icons\full\obj16\Process.gif">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </subNodeMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="14" labelExpression="aql:'Product Unity '+self.id+': Process'" widthComputationExpression="25" heightComputationExpression="30">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelFormat>bold</labelFormat>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_gray']"/>
+          </style>
+        </containerMappings>
+        <containerMappings name="DefectContainer" semanticCandidatesExpression="var:self" domainClass="CoffeeModeling::ProductUnity" childrenPresentation="List">
+          <subNodeMappings name="Defect" semanticCandidatesExpression="feature:defect" domainClass="CoffeeModeling::Defect">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="aql:self.name" labelAlignment="LEFT" sizeComputationExpression="7" resizeKind="NSEW" workspacePath="co.edu.uniquindio.CoffeeModeling.edit\icons\full\obj16\Defect.gif">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </subNodeMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="14" labelExpression="aql:'Product Unity '+self.id+': Defect'" widthComputationExpression="20" heightComputationExpression="30">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelFormat>bold</labelFormat>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_red']"/>
+          </style>
+        </containerMappings>
+        <containerMappings name="FeatureContainer" semanticCandidatesExpression="var:self" domainClass="CoffeeModeling::ProductUnity" childrenPresentation="List">
+          <subNodeMappings name="Feature" semanticCandidatesExpression="feature:feature" domainClass="CoffeeModeling::Feature">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="aql:self.name" labelAlignment="LEFT" sizeComputationExpression="7" resizeKind="NSEW" workspacePath="co.edu.uniquindio.CoffeeModeling.edit\icons\full\obj16\Feature.gif">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </subNodeMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="14" labelExpression="aql:'Product Unity '+self.id+': Feature'" widthComputationExpression="20" heightComputationExpression="30">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelFormat>bold</labelFormat>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_orange']"/>
+          </style>
+        </containerMappings>
+        <toolSections>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="New Origin" nodeMappings="//@ownedViewpoints[name='Diagramas']/@ownedRepresentations[name='ProductUnity']/@defaultLayer/@containerMappings[name='OriginContainer']/@subNodeMappings[name='Origin']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="CoffeeModeling::Origin" referenceName="origin"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="New Process" nodeMappings="//@ownedViewpoints[name='Diagramas']/@ownedRepresentations[name='ProductUnity']/@defaultLayer/@containerMappings[name='ProcessContainer']/@subNodeMappings[name='Process']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="CoffeeModeling::Process" referenceName="register">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="id" valueExpression="aql:''+container.register->filter(CoffeeModeling::Process)->size()"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="New Defect" nodeMappings="//@ownedViewpoints[name='Diagramas']/@ownedRepresentations[name='ProductUnity']/@defaultLayer/@containerMappings[name='DefectContainer']/@subNodeMappings[name='Defect']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="CoffeeModeling::Defect" referenceName="defect">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="id" valueExpression="aql:''+container.defect->filter(CoffeeModeling::Defect)->size()"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="New Feature" nodeMappings="//@ownedViewpoints[name='Diagramas']/@ownedRepresentations[name='ProductUnity']/@defaultLayer/@containerMappings[name='FeatureContainer']/@subNodeMappings[name='Feature']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="CoffeeModeling::Feature" referenceName="feature">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="id" valueExpression="aql:''+container.feature->filter(CoffeeModeling::Feature)->size()"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DoubleClickDescription" name="Ir a Personas" mappings="//@ownedViewpoints[name='Diagramas']/@ownedRepresentations[name='ProductUnity']/@defaultLayer/@containerMappings[name='ProcessContainer']/@subNodeMappings[name='Process']">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:Navigation" createIfNotExistent="true" diagramDescription="//@ownedViewpoints[name='Diagramas']/@ownedRepresentations[name='Process']"/>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Process" domainClass="CoffeeModeling::Process" enablePopupBars="true">
+      <metamodel href="http://www.example.org/CoffeeModeling#/"/>
+      <defaultLayer name="Default">
+        <containerMappings name="PeopleContainer" semanticCandidatesExpression="var:self" domainClass="CoffeeModeling::Process" childrenPresentation="List">
+          <subNodeMappings name="People" semanticCandidatesExpression="feature:people" domainClass="CoffeeModeling::People">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="aql:self.name" labelAlignment="LEFT" sizeComputationExpression="-1" labelPosition="node" resizeKind="EAST_WEST" workspacePath="co.edu.uniquindio.CoffeeModeling.edit\icons\full\obj16\People.gif">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </subNodeMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="14" labelExpression="aql:'Process '+self.name+': People'" widthComputationExpression="20" heightComputationExpression="30">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelFormat>bold</labelFormat>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_orange']"/>
+          </style>
+        </containerMappings>
+        <containerMappings name="ProductUnity" semanticCandidatesExpression="feature:eContainer" doubleClickDescription="//@ownedViewpoints[name='Diagramas']/@ownedRepresentations[name='Process']/@defaultLayer/@toolSections.0/@ownedTools[name='Ir%20a%20ProductUnity']" domainClass="CoffeeModeling::ProductUnity">
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="aql:'Volver'">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+          </style>
+        </containerMappings>
+        <toolSections>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="New People" nodeMappings="//@ownedViewpoints[name='Diagramas']/@ownedRepresentations[name='Process']/@defaultLayer/@containerMappings[name='PeopleContainer']/@subNodeMappings[name='People']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="CoffeeModeling::People" referenceName="people"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DoubleClickDescription" name="Ir a ProductUnity" mappings="//@ownedViewpoints[name='Diagramas']/@ownedRepresentations[name='Process']/@defaultLayer/@containerMappings[name='ProductUnity']">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:Navigation" diagramDescription="//@ownedViewpoints[name='Diagramas']/@ownedRepresentations[name='ProductUnity']"/>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_2:EditionTableDescription" name="Table People" domainClass="CoffeeModeling::Process">
+      <metamodel href="http://www.example.org/CoffeeModeling#/"/>
+      <ownedLineMappings name="People" domainClass="CoffeeModeling::People" semanticCandidatesExpression="feature:eAllContents" headerLabelExpression="aql:self.name"/>
+      <ownedColumnMappings name="id" headerLabelExpression="ID" featureName="id" labelExpression="aql:self.id"/>
+      <ownedColumnMappings name="name" headerLabelExpression="Name" featureName="name" labelExpression="aql:self.name"/>
+      <ownedColumnMappings name="birth date" headerLabelExpression="Birth Date" featureName="birthdate" labelExpression="aql:self.birthdate"/>
+      <ownedColumnMappings name="Experience" headerLabelExpression="Experience" featureName="experience_years" labelExpression="aql:self.experience_years"/>
+      <ownedColumnMappings name="Special population" headerLabelExpression="Special Population" featureName="special_population" labelExpression="aql:self.special_population"/>
+      <ownedColumnMappings name="entailment" headerLabelExpression="entailment" featureName="entailment" labelExpression="aql:self.entailment"/>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_2:EditionTableDescription" name="Table Defect" domainClass="CoffeeModeling::ProductUnity">
+      <ownedLineMappings name="Defect" domainClass="CoffeeModeling::Defect" semanticCandidatesExpression="feature:eAllContents"/>
+      <ownedColumnMappings name="id" headerLabelExpression="ID" featureName="id" labelExpression="aql:self.id"/>
+      <ownedColumnMappings name="name" headerLabelExpression="Name" featureName="name" labelExpression="aql:self.name"/>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_2:EditionTableDescription" name="Table Feature" domainClass="CoffeeModeling::ProductUnity">
+      <metamodel href="http://www.example.org/CoffeeModeling#/"/>
+      <ownedLineMappings name="Feature" domainClass="CoffeeModeling::Feature" semanticCandidatesExpression="feature:eAllContents"/>
+      <ownedColumnMappings name="id" headerLabelExpression="ID" featureName="id" labelExpression="aql:self.id"/>
+      <ownedColumnMappings name="name" headerLabelExpression="Name" featureName="name" labelExpression="aql:self.name"/>
+      <ownedColumnMappings name="value" headerLabelExpression="Value" featureName="value" labelExpression="aql:self.value"/>
+      <ownedColumnMappings name="Description" headerLabelExpression="Description" featureName="description" labelExpression="aql:self.description"/>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_2:EditionTableDescription" name="Table Process" domainClass="CoffeeModeling::ProductUnity">
+      <metamodel href="http://www.example.org/CoffeeModeling#/"/>
+      <ownedLineMappings name="Process" domainClass="CoffeeModeling::Process" semanticCandidatesExpression="feature:eAllContents"/>
+      <ownedColumnMappings name="id" headerLabelExpression="ID" featureName="id" labelExpression="aql:self.id"/>
+      <ownedColumnMappings name="name" headerLabelExpression="Name" featureName="name" labelExpression="aql:self.name"/>
+      <ownedColumnMappings name="date init" headerLabelExpression="Date init" featureName="date_init" labelExpression="aql:self.date_init"/>
+      <ownedColumnMappings name="date end" headerLabelExpression="Date end" featureName="date_end" labelExpression="aql:self.date_end"/>
+      <ownedColumnMappings name="Description" headerLabelExpression="Description" featureName="description" labelExpression="aql:self.description"/>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_2:EditionTableDescription" name="Table Origin" domainClass="CoffeeModeling::ProductUnity">
+      <metamodel href="http://www.example.org/CoffeeModeling#/"/>
+      <ownedLineMappings name="Origin" domainClass="CoffeeModeling::Origin" semanticCandidatesExpression="feature:eAllContents"/>
+      <ownedColumnMappings name="id" headerLabelExpression="ID" featureName="id" labelExpression="aql:self.id"/>
+      <ownedColumnMappings name="name" headerLabelExpression="Name" featureName="name" labelExpression="aql:self.name"/>
+      <ownedColumnMappings name="Average_altitude" headerLabelExpression="Average_altitude" featureName="average_altitude" labelExpression="aql:self.average_altitude"/>
+      <ownedColumnMappings name="Average latitude" headerLabelExpression="Average_latitude" featureName="average_latitude" labelExpression="aql:self.average_latitude"/>
+      <ownedColumnMappings name="Average longitude" headerLabelExpression="Average_longitude" featureName="average_longitude" labelExpression="aql:self.average_longitude"/>
+      <ownedColumnMappings name="Average temperature" headerLabelExpression="Average_temperature" featureName="average_temperature" labelExpression="aql:self.average_temperature"/>
+      <ownedColumnMappings name="anual_production" headerLabelExpression="anual_production" featureName="anual_production" labelExpression="aql:self.anual_production"/>
+      <ownedColumnMappings name="Average latitude" headerLabelExpression="Average_latitude" featureName="average_latitude" labelExpression="aql:self.average_latitude"/>
+      <ownedColumnMappings name="assortment" headerLabelExpression="assortment" featureName="assortment" labelExpression="aql:self.assortment"/>
+      <ownedColumnMappings name="details" headerLabelExpression="details" featureName="details" labelExpression="aql:self.details"/>
+    </ownedRepresentations>
+    <ownedJavaExtensions qualifiedClassName="my.coffeemodeling.design.Services"/>
+  </ownedViewpoints>
+</description:Group>
